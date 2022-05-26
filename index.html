@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--=============== slick courasel ===============-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <title>BASMALAHSTORE</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <!-- <i class='bx bxs-watch nav__logo-icon'></i> -->
+                BASMALAHSTORE
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Vedette</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Produits</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Arrivages</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">Mon panier</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">OLYMPÉA</h3>
+                    <span class="cart__price">65.500F</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">BLEU DE CHANEL</h3>
+                    <span class="cart__price">91.000F</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/new1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Longines Rose</h3>
+                    <span class="cart__price">$980</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article> -->
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">2 articles</span>
+            <span class="cart__prices-total">156.500F</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/home2.png" alt="" class="home__img">
+                    <img src="assets/img/home3.png" alt="" class="home__img">
+                    <img src="assets/img/home4.png" alt="" class="home__img">
+                    <img src="assets/img/home5.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">BASMALAHSTORE <br> NOUVELLES COLLECTIONS 2022</h1>
+                    <p class="home__description">
+                        Pour nous, c'est plus qu'un vêtement c'est notre drapeau national en tant que drapeau en tant que Mourides.
+                    </p>
+                    <span class="home__price">25000 FCFA</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Découvrir
+                        </a>
+
+                        <button class="button home__button">AJOUTER AU PANIER</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                VEDETTE
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">SOLDES</span>
+
+                    <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Olympéa</h3>
+                        <span class="featured__price">65.500F</span>
+                    </div>
+
+                    <button class="button featured__button">AJOUTER AU PANIER</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">SOLDES</span>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">La Petite Robe Noire</h3>
+                        <span class="featured__price">58.800F</span>
+                    </div>
+
+                    <button class="button featured__button">AJOUTER AU PANIER</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">SOLDES</span>
+
+                    <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Bleu de Chanel</h3>
+                        <span class="featured__price">91.000F</span>
+                    </div>
+
+                    <button class="button featured__button">AJOUTER AU PANIER</button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        NOTRE HISTOIRE
+                    </h2>
+
+                    <h1 class="story__title">
+                        Parfumeur <br> & Styliste
+                    </h1>
+
+                    <p class="story__description">
+                        Créé en 2021 par Cheick Ahmadou Bamba Diouf, jeune entrepreneur étudiant, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, maiores odio. Nobis exercitationem, officia fugiat a nisi veritatis atque assumenda, aperiam distinctio,
+                        deserunt deleniti est animi similique rem natus architecto!
+                    </p>
+
+                    <a href="#" class="button button--small">DECOUVRIR</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="assets/img/story.png" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Les produits
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/product1.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Sauvage</h3>
+                    <span class="products__price">55.500F</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product2.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Le male</h3>
+                    <span class="products__price">95.000F</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product3.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Bacarat Rouge</h3>
+                    <span class="products__price">120.000F</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product4.png" alt="" class="products__img">
+
+                    <h3 class="products__title">La Nuit de l'homme</h3>
+                    <span class="products__price">55.000F</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product5.png" alt="" class="products__img">
+
+                    <h3 class="products__title">The one</h3>
+                    <span class="products__price">65.000F</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Doe</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest news and trends, with a very comfortable price and especially with the attention you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Magaye DIOP</span>
+                                    <span class="testimonial__perfil-detail">Professeur d'automatique</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                Nouvels arrivages
+            </h2>
+
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+
+                            <img src="assets/img/new1.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Aamer Al Oud</h3>
+                                <span class="new__price">78.500F</span>
+                            </div>
+
+                            <button class="button new__button">AJOUTER AU PANIER</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+
+                            <img src="assets/img/new2.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Jicky Guerlain</h3>
+                                <span class="new__price">95.000F</span>
+                            </div>
+
+                            <button class="button new__button">AJOUTER AU PANIER</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+
+                            <img src="assets/img/new3.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Black Oud Montale</h3>
+                                <span class="new__price">55.000F</span>
+                            </div>
+
+                            <button class="button new__button">AJOUTER AU PANIER</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+
+                            <img src="assets/img/new4.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Oud Noir </h3>
+                                <span class="new__price">85.000F</span>
+                            </div>
+
+                            <button class="button new__button">AJOUTER AU PANIER</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Abonnez-vous Our <br> à notre Newsletter</h2>
+                    <p class="newsletter__description">
+                        Ne ratez pas vos remises. Inscrivez-vous à notre newsletter pour recevoir les meilleures offres, remises, coupons, cadeaux et bien plus encore.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Entrez votre email" class="newsletter__input">
+                    <button class="button">
+                        S'ABONNER
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Nos informations</h3>
+
+                <ul class="footer__list">
+                    <li>Liberté 5</li>
+                    <!-- <li>La Libertad 43210</li> -->
+                    <li>+221 78 117 39 40</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">A propos</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Support Clients</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Produits</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Chanel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Dior</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Yves ST Laurent</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Oud</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Réseaux</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; BASMALAHSTORE. Tous droit réservés</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.js"></script>
+
+    <!--=============== slick courasel ===============-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
